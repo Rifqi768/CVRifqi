@@ -1,0 +1,928 @@
+:root {
+    --primary-color: #8B0000;
+    --hover-color: #A52A2A;
+    --light-gray: #f0f0f0;
+    --border-gray: #dcdcdc;
+    --text-color: #333;
+    --white: #fff;
+    --dark-gray: #D3D3D3;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+nav .logo {
+    color: var(--white);
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Example style for active link */
+nav ul li a.active {
+    color: white; /* Change to your preferred color */
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* About Section */
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.image-placeholder {
+    flex: 1;
+    background-color: var(--light-gray);
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--border-gray);
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure any overflowing content is hidden */
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+
+/* Social Media Buttons */
+.social-media-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+.social-btn i {
+    font-size: 20px; /* Adjust icon size */
+}
+
+/* Specific colors for each social media */
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+
+/* Download CV Button */
+.download-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.skills-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skill-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.skill-card p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Qualification Section */
+.qualification {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.qualification h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.qualification p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.qualification-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/*------project-------*/
+
+/* Project Section */
+.project-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--white); /* Set background to white */
+}
+
+.project-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-card a{
+    background-color: #8B0000;
+}
+
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+/* Project Section Links */
+.project-card a {
+    color: var(--white);
+    background-color: #8B0000; /* Set project links to white */
+}
+
+.project-card a:hover {
+    color: var(--hover-color); /* Optional hover color */
+}
+
+/* Remove default link color (blue) in the project section */
+.project-card a:link, 
+.project-card a:visited {
+    color: var(--white); /* Ensure default and visited project links are white */
+}
+
+/* Center the project grid items */
+.project-grid {
+    display: flex;
+    justify-content: center; /* Center the grid items horizontally */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Contact Section */
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-info {
+    width: 45%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    color: var(--text-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-info p,
+.contact-info a,
+.contact-info address {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 45%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add spacing between form elements */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border-gray);
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 150px; /* Increase height for better readability */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button {
+    padding: 15px; /* Increase padding for a larger button */
+    background-color: var(--hover-color);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.05); /* Slightly increase button size on hover */
+}
+
+/* Certificates Section */
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.sertifikat-section h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sertifikat-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.certificate {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.certificate:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .certificates {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .certificate {
+        width: 100%;
+    }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate {
+        width: 100%;
+    }
+}
+
+/* Media Queries */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-placeholder {
+        width: 100%;
+        height: 200px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .certificates {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .certificate {
+        width: 100%;
+    }
+}
+
+/* Project Detail Section */
+/* Project Detail Section */
+.projekdetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.projekdetail-content {
+    flex: 1;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.projekdetail-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.projekdetail-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-image-placeholder {
+    flex: 1;
+    background-color: var(--light-gray);
+    width: 10%;
+    max-width: 300px; /* Larger size for project detail */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--border-gray);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.project-image-placeholder img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive Design for Project Detail */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .projekdetail {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projekdetail-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-image-placeholder {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    .projekdetail {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .projekdetail-content h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .projekdetail-content p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .project-image-placeholder {
+        width: 100%;
+        height: 150px; /* Adjust height for smaller screens */
+    }
+
+    .project-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: var(--white);
+        margin: 4px 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: var(--primary-color);
+        width: 240px;
+        height: 100vh; /* Make sure the menu covers the full screen */
+        border-radius: 5px;
+        z-index: 1000; /* Ensure the menu is above other content */
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 15px;
+    }
+
+    nav ul li a {
+        padding: 15px 10px;
+        font-size: 0.9em;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    main {
+        margin-top: 80px; /* Add space below the navigation */
+    }
+
+    .project-card {
+        z-index: 1; /* Ensure it's below the navigation menu */
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate {
+        width: 100%;
+    }
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-section p{
+    text-color: black;
+}
+.contact-form {
+    margin-bottom: 20px;
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form form {
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    .contact-form textarea {
+        height: 120px; /* Adjust textarea height for smaller screens */
+    }
+
+    .contact-form button {
+        font-size: 16px; /* Adjust button font size for smaller screens */
+    }
+}
+
+/* About Section Responsive for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Susun elemen secara vertikal */
+        align-items: flex-start; /* Elemen disusun ke kiri */
+        padding: 10px;
+    }
+
+    .about-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: left; /* Teks berada di kiri */
+    }
+
+    .about-content h1 {
+        font-size: 28px; /* Ukuran font heading yang lebih kecil */
+        margin-bottom: 15px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        line-height: 1.5; /* Line height yang lebih besar untuk keterbacaan */
+        padding: 0 15px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%; /* Tombol mengambil seluruh lebar */
+        align-items: flex-start; /* Tombol disusun ke kiri */
+    }
+
+    .image-placeholder {
+        width: 60%; /* Sesuaikan lebar gambar */
+        height: 180px; /* Tinggi gambar lebih kecil */
+        margin-bottom: 20px;
+    }
+
+    /* Responsive Social Media Buttons */
+    .social-media-buttons {
+        justify-content: flex-start; /* Susun tombol sosial ke kiri */
+        gap: 8px; /* Kurangi jarak antar tombol */
+    }
+
+    .social-btn {
+        padding: 8px 16px; /* Ukuran tombol lebih kecil */
+        font-size: 14px; /* Font lebih kecil */
+    }
+
+    .social-btn i {
+        font-size: 16px; /* Ukuran ikon lebih kecil */
+    }
+}
+
+/* About Section Responsive for Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .about {
+        padding: 10px;
+        align-items: flex-start; /* Elemen disusun ke kiri */
+    }
+
+    .about-content h1 {
+        font-size: 24px; /* Font heading lebih kecil */
+        margin-bottom: 10px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        padding: 0 10px; /* Tambahkan padding horizontal */
+    }
+
+    .image-placeholder {
+        width: 100%; /* Gambar mengambil seluruh lebar */
+        height: 150px; /* Sesuaikan tinggi gambar */
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start; /* Tombol disusun ke kiri */
+    }
+
+    /* Responsive Social Media Buttons */
+    .social-media-buttons {
+        justify-content: flex-start; /* Susun tombol sosial ke kiri */
+        gap: 5px; /* Kurangi jarak antar tombol */
+    }
+
+    .social-btn {
+        padding: 6px 12px; /* Ukuran tombol lebih kecil */
+        font-size: 12px; /* Font lebih kecil */
+    }
+
+    .social-btn i {
+        font-size: 14px; /* Ukuran ikon lebih kecil */
+    }
+}
+
+/* Global link styling */
+a {
+    color: var(--white); /* Make sure all links are white by default */
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--white); /* Ensure visited links are also white */
+}
+
+a:hover, a:focus {
+    color: var(--text-color); /* Add a hover effect if desired */
+}
+
+a:active {
+    color: var(--white); /* Ensure active links remain white */
+}
+
+/* Specific style for active link */
+nav ul li a.active {
+    color: var(--white); /* Active link color */
+    font-weight: bold;
+}
+
+
